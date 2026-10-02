@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Close All Now Support</title>
+<meta name="description" content="Help and support for Close All Now, the Mac menu bar app that quits every open app in one click.">
+<link rel="icon" href="icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <img src="icon.png" alt="Close All Now icon">
+    <div>
+      <p class="name">Close All Now for Mac</p>
+      <h1>Support</h1>
+    </div>
+  </header>
+
+  <p class="lead">Close All Now sits in your menu bar and quits your open apps in one click. This page covers set-up and the questions that come up most.</p>
+
+  <section>
+    <h2>Getting started</h2>
+    <ol>
+      <li>Open Close All Now. It has no Dock icon. Look for the stacked-squares icon in the menu bar.</li>
+      <li>Click the icon to see the apps you have open.</li>
+      <li>Complete the one-time set-up described below.</li>
+      <li>Click <strong>Close Everything</strong> to quit all open apps, or the <strong>x</strong> beside one app to quit just that one.</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>One-time set-up: the helper</h2>
+    <p>macOS does not let Mac App Store apps quit other apps directly. Close All Now uses a small helper script instead, and macOS only runs it once you have installed it yourself.</p>
+    <ol>
+      <li>Click <strong>Install Helper…</strong> in the app.</li>
+      <li>A folder window opens on the right folder. Click <strong>Install Helper</strong> to confirm.</li>
+    </ol>
+    <p>The script is saved to <code>~/Library/Application Scripts/com.schwedhelm.closeallnow/QuitApps.js</code>. All it does is pass your quit requests to the apps you chose to close.</p>
+  </section>
+
+  <section>
+    <h2>Common questions</h2>
+    <p><strong>Will I lose unsaved work?</strong><br>No. Each app is asked to quit in the normal way, so an app with unsaved changes asks you to save first. Nothing is force-quit.</p>
+    <p><strong>How do I keep an app open?</strong><br>Click the shield button beside it. Excluded apps are skipped by Close Everything. You can manage the list in Settings (the gear button). Finder is always left open.</p>
+    <p><strong>An app did not close.</strong><br>It is probably waiting for you to answer a save prompt. Switch to that app and respond to it.</p>
+    <p><strong>How do I start it when I log in?</strong><br>Open Settings and switch on Start on Login. It is off by default.</p>
+    <p><strong>How do I quit Close All Now?</strong><br>Open Settings and click Quit App.</p>
+    <p><strong>How do I remove the helper?</strong><br>Open Settings, go to Quit Helper, click Show in Finder and move the script to the Bin.</p>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>Found a bug or have a question that is not answered here? Open an issue and you will get a reply there.</p>
+    <p><a class="button" href="https://github.com/RussellSchwedhelm/close-all-now-support/issues/new">Contact support</a></p>
+  </section>
+
+  <footer>
+    <a href="privacy.html">Privacy Policy</a>
+    <span>© 2026 Russell Schwedhelm</span>
+  </footer>
+</div>
+</body>
+</html>
